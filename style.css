@@ -125,11 +125,10 @@ h1 {
     height: 600px;
     margin-top: 80px;
     margin-right: 100px;
-    margin-left: 280px;
-
+    margin-left: 185px;
 }
 
-.header {
+.mid {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -141,4 +140,3 @@ h1 {
     margin: 20px;
     position: sticky;
 }
-
