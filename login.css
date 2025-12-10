@@ -1,0 +1,113 @@
+.base {
+    width: 370px;
+    height: 600px;
+    background: linear-gradient(145deg, #f3c4ce, #E2748C, #723948);
+    border-radius: 40px;
+    box-shadow: 9px 8px black;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#logintxt {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 8.5%;
+    left: 7%;
+    margin: 4px;
+}
+
+#user {
+    display: inline-flex;
+    color: black;
+    float: left;
+    position: absolute;
+    top: 23%;
+    left: 3.5%;
+}
+
+#user::placeholder {
+    background-color: #723948;
+    border: 2px solid black;
+    border-radius: 20%;
+    color: black;
+
+}
+
+.user_input {
+    background: #EFB1BE;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    color: black;
+    border-radius: 40px;
+    height: 20px;
+    display: inline-flex;
+
+}
+
+.email_pws {
+    background: #EFB1BE;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    color: black;
+    border-radius: 40px;
+    height: 20px;
+    width: 200px;
+    display: inline-flex;
+}
+
+.forgot_pws {
+    color: #F2BFCA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sign_in {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin: 12px;
+    /* padding: 7px 8px; */
+
+}
+
+#button {
+    width: 300px;
+    height: 50px;
+    background-color: #E2748C;
+    border-radius: 40px;
+    border: 3px solid black;
+    box-shadow: 9px 8px black;
+    /* padding: 25px 150px; */
+    margin: 30px;
+    position: absolute;
+    top: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#create_Acc {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 27px;
+    color: black;
+}
+
+/* #contact {
+    background: #EFB1BE;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    color: black;
+    border-radius: 40px;
+    height: 20px;
+} */
