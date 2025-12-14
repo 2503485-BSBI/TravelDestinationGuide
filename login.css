@@ -1,36 +1,36 @@
 .base {
-    width: 370px;
+    width: 770px;
     height: 600px;
     background: linear-gradient(145deg, #f3c4ce, #E2748C, #723948);
     border-radius: 40px;
     box-shadow: 9px 8px black;
-    margin: 10px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     font-family: 'Times New Roman', Times, serif;
-
+    position: relative;
 }
 
-#logintxt {
+.base #logintxt {
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     color: black;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 8.5%;
+    position: absolute;
+    top: 3%;
     left: 7%;
-    margin: 4px;
 }
 
 #user {
-    display: inline-flex;
+    display: block;
     color: black;
     float: left;
     position: absolute;
     top: 23%;
-    left: 3.5%;
+    left: 6%;
+    text-align: left;
 }
 
 #user::placeholder {
@@ -47,7 +47,8 @@
     box-shadow: 2px 2px black;
     color: black;
     border-radius: 40px;
-    height: 20px;
+    height: 24px;
+    width: 280px;
     display: inline-flex;
 
 }
@@ -58,8 +59,8 @@
     box-shadow: 2px 2px black;
     color: black;
     border-radius: 40px;
-    height: 20px;
-    width: 200px;
+    height: 24px;
+    width: 280px;
     display: inline-flex;
 }
 
@@ -74,40 +75,68 @@
 
 .sign_in {
     display: flex;
-    align-items: center;
     font-size: 25px;
-    margin: 12px;
-    /* padding: 7px 8px; */
+    margin-top: 20px;
+    font-style: italic;
+
 
 }
 
 #button {
-    width: 300px;
+    width: 280px;
     height: 50px;
     background-color: #E2748C;
     border-radius: 40px;
-    border: 3px solid black;
+    border: 2px solid black;
     box-shadow: 9px 8px black;
-    /* padding: 25px 150px; */
     margin: 30px;
     position: absolute;
-    top: 78%;
+    top: 100%;
+    left: 40%;
+    transform: translateX(-50%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+}
+
+#acc_created {
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 45px rgba(255, 255, 255, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: 0;
 }
 
-#create_Acc {
+#acc_created_txt {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 27px;
-    color: black;
+    font-size: 38px;
+    color: #2a0912;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 10%;
 }
 
-/* #contact {
-    background: #EFB1BE;
-    border: 2px solid black;
-    box-shadow: 2px 2px black;
-    color: black;
-    border-radius: 40px;
-    height: 20px;
-} */
+#image {
+    width: 790px;
+    height: 530px;
+    position: absolute;
+    top: 3%;
+    left: 11%;
+    z-index: 2;
+}
