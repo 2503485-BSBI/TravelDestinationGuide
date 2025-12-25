@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Food Offers | Restauraunts | Travel Destination Guide</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<!-- LOGIN OVERLAY -->
+<div id="acc_created" style="display:none; position:fixed; inset:0; z-index:1000;">
+    <div style="
+        position:absolute;
+        inset:0;
+        background:rgba(0,0,0,0.5);
+    " onclick="closeLogin()"></div>
+
+    <div style="
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    ">
+        <!-- LOGIN CONTENT -->
+        <div class="base">
+            <div id="logintxt"><b>SIGN UP</b></div>
+
+            <div id="user">
+                <form>
+                    <label><i><b>Your Name</b></i></label><br>
+                    <input type="text" placeholder="Full Name" class="user_input"><br><br>
+
+                    <label><i><b>Your Contact</b></i></label><br>
+                    <input type="number" placeholder="+1" class="user_input"><br><br>
+
+                    <label><i><b>Your Email</b></i></label><br>
+                    <input type="email" placeholder="Enter Email" class="email_pws"><br><br>
+
+                    <label><i><b>Your Password</b></i></label><br>
+                    <input type="password" placeholder="Enter Password" class="email_pws"><br><br>
+                </form>
+
+                <a href="#" class="forgot_pws" style="position:absolute; top:73%; left: 58%;">Forgot Password?</a>
+
+                <div class="sign_in"><b>Already have an account?</b></div>
+                <a href="#" class="forgot_pws" style="font-size:25px; margin-top: 10px;"><b>Sign In</b></a>
+
+                <button type="button" id="button">
+                    <b>Create Account</b>
+                </button>
+            </div>
+            <div id="image">
+                <img src="spider lilies.png" id="image">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<body>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- HEADER -->
+
+    <div class="header">
+        <button type="button" id="menu" onclick="toggleMenu()"><b>Menu</b> </button>
+        <!-- Side Menu -->
+        <div id="sideMenu" class="side-menu">
+            <a href="'Travel Destination Guide'.html" onclick="toggleMenu()">Home</a>
+            <a href="restaurants.html" onclick="toggleMenu()">Restaurants</a>
+            <a href="hotels.html" onclick="toggleMenu()">Hotels</a>
+            <a href="trails.html" onclick="toggleMenu()">Trails</a>
+            <a href="aboutus.html" onclick="toggleMenu()">About Us</a>
+            <a href="contactus.html" onclick="toggleMenu()">Contact Us</a>
+        </div>
+        <img id="logo" src="logo.png">
+
+        <div>
+
+            <button type="button" id="login" onclick="openLogin()">
+                <div id="logintxt"><b>Login</b></div>
+            </button>
+
+        </div>
+    </div>
+    <!-- CONTAINERS -->
+    <div class="container">
+
+        <a href="https://www.serenahotels.com/" target="_blank" class="card-link">
+            <div class="card">
+                <h2 style="color: #723948;">Serena Hotels</h2>
+                <p>"Your Journey Begins Here."</p>
+                <img src="serena.png" alt="Serena Hotels">
+            </div>
+        </a>
+
+        <a href="https://www.pchotels.com/" target="_blank" class="card-link">
+            <div class="card">
+                <h2 style="color: #723948;">Pearl Continental</h2>
+                <p>"Each accommodation blends luxury and comfort, making you feel at home."</p>
+                <img src="https://crystalpng.com/wp-content/uploads/2025/01/pc-pearl-continental-logo.png"
+                    alt="pc hotels">
+            </div>
+        </a>
+
+        <a href="https://the108hotel.com/" target="_blank" class="card-link">
+            <div class="card">
+                <h2 style="color: #723948;">The 108 Hotel</h2>
+                <p>"We give travellers a cooler option in a sea of beige hotels that proliferate in the city."</p>
+                <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEbwBUfuBOP7w/company-logo_200_200/company-logo_200_200/0/1651133393773?e=2147483647&v=beta&t=_O0iYD0kDVk8cFN9GX70-vWM-mBGZFAhagRCo7rsJ2E"
+                    alt="the 108 hotel">
+            </div>
+        </a>
+
+    </div>
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

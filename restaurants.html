@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Food Offers | Restauraunts | Travel Destination Guide</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<!-- LOGIN OVERLAY -->
+<div id="acc_created" style="display:none; position:fixed; inset:0; z-index:1000;">
+  <div style="
+        position:absolute;
+        inset:0;
+        background:rgba(0,0,0,0.5);
+    " onclick="closeLogin()"></div>
+
+  <div style="
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    ">
+    <!-- LOGIN CONTENT -->
+    <div class="base">
+      <div id="logintxt"><b>SIGN UP</b></div>
+
+      <div id="user">
+        <form>
+          <label><i><b>Your Name</b></i></label><br>
+          <input type="text" placeholder="Full Name" class="user_input"><br><br>
+
+          <label><i><b>Your Contact</b></i></label><br>
+          <input type="number" placeholder="+1" class="user_input"><br><br>
+
+          <label><i><b>Your Email</b></i></label><br>
+          <input type="email" placeholder="Enter Email" class="email_pws"><br><br>
+
+          <label><i><b>Your Password</b></i></label><br>
+          <input type="password" placeholder="Enter Password" class="email_pws"><br><br>
+        </form>
+
+        <a href="#" class="forgot_pws" style="position:absolute; top:73%; left: 58%;">Forgot Password?</a>
+
+        <div class="sign_in"><b>Already have an account?</b></div>
+        <a href="#" class="forgot_pws" style="font-size:25px; margin-top: 10px;"><b>Sign In</b></a>
+
+        <button type="button" id="button">
+          <b>Create Account</b>
+        </button>
+      </div>
+      <div id="image">
+        <img src="spider lilies.png" id="image">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<body>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- HEADER -->
+
+  <div class="header">
+    <button type="button" id="menu" onclick="toggleMenu()"><b>Menu</b> </button>
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+      <a href="'Travel Destination Guide'.html" onclick="toggleMenu()">Home</a>
+      <a href="restaurants.html" onclick="toggleMenu()">Restaurants</a>
+      <a href="hotels.html" onclick="toggleMenu()">Hotels</a>
+      <a href="trails.html" onclick="toggleMenu()">Trails</a>
+      <a href="aboutus.html" onclick="toggleMenu()">About Us</a>
+      <a href="contactus.html" onclick="toggleMenu()">Contact Us</a>
+    </div>
+    <img id="logo" src="logo.png">
+
+    <div>
+
+      <button type="button" id="login" onclick="openLogin()">
+        <div id="logintxt"><b>Login</b></div>
+      </button>
+
+    </div>
+  </div>
+  <!-- CONTAINERS -->
+  <div class="container">
+
+    <a href="https://www.mcdonalds.com.pk" target="_blank" class="card-link">
+      <div class="card">
+        <h2 style="color: #723948;">McDonald's</h2>
+        <p>"Sometimes the bravest hero is just a little chicken nugget."</p>
+        <img src="mac.jpg" alt="McDonald's">
+      </div>
+    </a>
+
+    <a href="https://www.burgerking.com" target="_blank" class="card-link">
+      <div class="card">
+        <h2 style="color: #723948;">Burger King</h2>
+        <p>"I'm into fitness... fitness whole burger in my mouth."</p>
+        <img src="burger king.png" alt="Burger King">
+      </div>
+    </a>
+
+    <a href="https://www.dominos.com" target="_blank" class="card-link">
+      <div class="card">
+        <h2 style="color: #723948;">Dominos</h2>
+        <p>"You can't make everyone happy. You're not pizza."</p>
+        <img src="dominos.png" alt="Dominos">
+      </div>
+    </a>
+
+  </div>
+  <script src="menu.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

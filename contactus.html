@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Travel Destination Guide</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<!-- LOGIN OVERLAY -->
+<div id="acc_created" style="display:none; position:fixed; inset:0; z-index:1000;">
+    <div style="
+        position:absolute;
+        inset:0;
+        background:rgba(0,0,0,0.5);
+    " onclick="closeLogin()"></div>
+
+    <div style="
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    ">
+        <!-- LOGIN CONTENT -->
+        <div class="base">
+            <div id="logintxt"><b>SIGN UP</b></div>
+
+            <div id="user">
+                <form>
+                    <label><i><b>Your Name</b></i></label><br>
+                    <input type="text" placeholder="Full Name" class="user_input"><br><br>
+
+                    <label><i><b>Your Contact</b></i></label><br>
+                    <input type="number" placeholder="+1" class="user_input"><br><br>
+
+                    <label><i><b>Your Email</b></i></label><br>
+                    <input type="email" placeholder="Enter Email" class="email_pws"><br><br>
+
+                    <label><i><b>Your Password</b></i></label><br>
+                    <input type="password" placeholder="Enter Password" class="email_pws"><br><br>
+                </form>
+
+                <a href="#" class="forgot_pws" style="position:absolute; top:73%; left: 58%;">Forgot Password?</a>
+
+                <div class="sign_in"><b>Already have an account?</b></div>
+                <a href="#" class="forgot_pws" style="font-size:25px; margin-top: 10px;"><b>Sign In</b></a>
+
+                <button type="button" id="button">
+                    <b>Create Account</b>
+                </button>
+            </div>
+            <div id="image">
+                <img src="spider lilies.png" id="image">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<body>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="contactus.css">
+    <!-- HEADER -->
+
+    <div class="header">
+        <button type="button" id="menu" onclick="toggleMenu()"><b>Menu</b> </button>
+        <!-- Side Menu -->
+        <div id="sideMenu" class="side-menu">
+            <a href="'Travel Destination Guide'.html" onclick="toggleMenu()">Home</a>
+            <a href="restaurants.html" onclick="toggleMenu()">Restaurants</a>
+            <a href="#hotels" onclick="toggleMenu()">Hotels</a>
+            <a href="aboutus.html" onclick="toggleMenu()">About Us</a>
+            <a href="contactus.html" onclick="toggleMenu()">Contact Us</a>
+        </div>
+        <img id="logo" src="logo.png">
+
+        <div>
+
+            <button type="button" id="login" onclick="openLogin()">
+                <div id="logintxt"><b>Login</b></div>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="contact_us">
+        <div id="contact_us">
+            <b>
+                Contact Us
+            </b>
+        </div>
+        <div id="contact_us_txt">
+            <p><strong>Email:</strong> support@traveldestinations.com</p>
+            <p><strong>Phone:</strong> +92 300 1234567</p>
+            <p><strong>Location:</strong> Islamabad, Pakistan</p> <br>
+            <!-- Contact Form -->
+            <div class="footer-section">
+                <h3>Send a Message</h3>
+                <form class="footer-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <br>© 2025 TravelDestinationGuide LLC All rights reserved.
+        </div>
+
+
+
+    </div>
+
+
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

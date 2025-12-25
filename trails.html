@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Food Offers | Restauraunts | Travel Destination Guide</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<!-- LOGIN OVERLAY -->
+<div id="acc_created" style="display:none; position:fixed; inset:0; z-index:1000;">
+    <div style="
+        position:absolute;
+        inset:0;
+        background:rgba(0,0,0,0.5);
+    " onclick="closeLogin()"></div>
+
+    <div style="
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    ">
+        <!-- LOGIN CONTENT -->
+        <div class="base">
+            <div id="logintxt"><b>SIGN UP</b></div>
+
+            <div id="user">
+                <form>
+                    <label><i><b>Your Name</b></i></label><br>
+                    <input type="text" placeholder="Full Name" class="user_input"><br><br>
+
+                    <label><i><b>Your Contact</b></i></label><br>
+                    <input type="number" placeholder="+1" class="user_input"><br><br>
+
+                    <label><i><b>Your Email</b></i></label><br>
+                    <input type="email" placeholder="Enter Email" class="email_pws"><br><br>
+
+                    <label><i><b>Your Password</b></i></label><br>
+                    <input type="password" placeholder="Enter Password" class="email_pws"><br><br>
+                </form>
+
+                <a href="#" class="forgot_pws" style="position:absolute; top:73%; left: 58%;">Forgot Password?</a>
+
+                <div class="sign_in"><b>Already have an account?</b></div>
+                <a href="#" class="forgot_pws" style="font-size:25px; margin-top: 10px;"><b>Sign In</b></a>
+
+                <button type="button" id="button">
+                    <b>Create Account</b>
+                </button>
+            </div>
+            <div id="image">
+                <img src="spider lilies.png" id="image">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<body>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- HEADER -->
+
+    <div class="header">
+        <button type="button" id="menu" onclick="toggleMenu()"><b>Menu</b> </button>
+        <!-- Side Menu -->
+        <div id="sideMenu" class="side-menu">
+            <a href="'Travel Destination Guide'.html" onclick="toggleMenu()">Home</a>
+            <a href="restaurants.html" onclick="toggleMenu()">Restaurants</a>
+            <a href="hotels.html" onclick="toggleMenu()">Hotels</a>
+            <a href="trails.html" onclick="toggleMenu()">Trails</a>
+            <a href="aboutus.html" onclick="toggleMenu()">About Us</a>
+            <a href="contactus.html" onclick="toggleMenu()">Contact Us</a>
+            <a href="#map" onclick="toggleMenu()">Locate Us</a>
+        </div>
+        <img id="logo" src="logo.png">
+
+        <div>
+
+            <button type="button" id="login" onclick="openLogin()">
+                <div id="logintxt"><b>Login</b></div>
+            </button>
+
+        </div>
+    </div>
+    <!-- CONTAINERS -->
+    <div class="container">
+
+        <a href="https://www.google.com/maps/place/Trail+5,+Islamabad/@33.7524883,73.0855937,17z/data=!3m1!4b1!4m6!3m5!1s0x38dfbf5eef818793:0x5d7d2adff678c1e7!8m2!3d33.7524883!4d73.0855937!16s%2Fg%2F1tnpjcsw?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+            target="_blank" class="card-link">
+            <div class="card">
+                <h2 style="color: #723948;">Trail 5 Margalla Hills</h2>
+                <p>"Explore the wild, breathe the freedom."</p>
+                <img src="trail5.jpg" alt="trail 5">
+            </div>
+        </a>
+
+        <a href="https://www.google.com/maps/place/Trail+6,+Islamabad/data=!4m2!3m1!1s0x38dfbedd71ef5257:0x9fdbcc1df8c7832b?sa=X&ved=1t:242&ictx=111"
+            target="_blank" class="card-link">
+            <div class="card">
+                <h2 style="color: #723948;">Trail 6 Margalla Hills</h2>
+                <p>"Step up, Margalla awaits."</p>
+                <img src="trail6.jpg" alt="trail 6">
+            </div>
+        </a>
+
+        <a href="https://www.google.com/maps/place/Trail+7+Starting+Point/@33.713704,72.9490474,17z/data=!3m1!4b1!4m6!3m5!1s0x38dfbdb9c108958b:0x45d03f4e238b9206!8m2!3d33.713704!4d72.9490474!16s%2Fg%2F11s752x_qh?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+            target="_blank" class="card-link">
+            <div class="card">
+                <h2 style="color: #723948;">Trail 7 Margalla Hills</h2>
+                <p>"Adventure lives on Trail 7."</p>
+                <img src="trail7.jpg" alt="trail 7">
+            </div>
+        </a>
+
+    </div>
+
+    <!-- MAPS -->
+
+    <br>
+    <hr style="border: 1px solid #723948;">
+    <div id="map">
+        <iframe src="https://www.google.com/maps?q=Air+University+Islamabad&output=embed"
+            style="border:0; width: 100%; height: 450px;" loading="lazy">
+        </iframe>
+    </div>
+    <hr style="border: 1px solid #723948;">
+    <br>
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

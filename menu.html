@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Side Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menu Button -->
+    <button type="button" class="menu-btn" onclick="toggleMenu()">Menu</button>
+
+    <!-- Side Menu -->
+    <div id="sideMenu" class="side-menu">
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#restaurants" onclick="toggleMenu()">Restaurants</a>
+        <a href="#hotels" onclick="toggleMenu()">Hotels</a>
+        <a href="#about" onclick="toggleMenu()">About Us</a>
+        <a href="#contact" onclick="toggleMenu()">Contact Us</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="home">
+            <h1>Home</h1>
+        </section>
+        <section id="restaurants">
+            <h1>Restaurants</h1>
+        </section>
+        <section id="hotels">
+            <h1>Hotels</h1>
+        </section>
+        <section id="about">
+            <h1>About Us</h1>
+        </section>
+        <section id="contact">
+            <h1>Contact Us</h1>
+        </section>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>
