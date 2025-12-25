@@ -9,6 +9,7 @@
     justify-content: space-between;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
+    right: 10%;
 }
 
 .base #logintxt {
@@ -38,6 +39,7 @@
     border: 2px solid black;
     border-radius: 20%;
     color: black;
+    margin-left: 100px;
 
 }
 
@@ -70,6 +72,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 
 }
 
@@ -78,8 +81,7 @@
     font-size: 25px;
     margin-top: 20px;
     font-style: italic;
-
-
+    cursor: pointer;
 }
 
 #button {
@@ -104,10 +106,10 @@
     width: auto;
     height: auto;
     border-radius: 40px;
-    backdrop-filter: blur(14px);
-    background: rgba(255, 255, 255, 0.1);
+    /* backdrop-filter: blur(14px); */
+    /* background: rgba(215, 204, 204, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
-    box-shadow: 0 8px 45px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 45px rgba(255, 255, 255, 0.4); */
     position: fixed;
     top: 0;
     left: 0;
@@ -117,6 +119,8 @@
     align-items: center;
     text-align: center;
     margin: 0;
+    inset: 0;
+    z-index: 1000;
 }
 
 #acc_created_txt {
@@ -139,4 +143,24 @@
     top: 3%;
     left: 11%;
     z-index: 2;
+}
+
+
+
+.login-panel {
+    position: fixed;
+    top: 0;
+
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease;
+}
+
+#acc_created.active .login-panel {
+    right: 0;
 }
