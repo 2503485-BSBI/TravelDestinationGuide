@@ -16,12 +16,8 @@
         background:rgba(0,0,0,0.5);
     " onclick="closeLogin()"></div>
 
-    <div style="
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -50%);
-    ">
+    <div class="login-panel">
+
         <!-- LOGIN CONTENT -->
         <div class="base">
             <div id="logintxt"><b>SIGN UP</b></div>
@@ -46,7 +42,7 @@
                 <div class="sign_in"><b>Already have an account?</b></div>
                 <a href="#" class="forgot_pws" style="font-size:25px; margin-top: 10px;"><b>Sign In</b></a>
 
-                <button type="button" id="button">
+                <button type="button" id="button" onclick="notification()">
                     <b>Create Account</b>
                 </button>
             </div>
@@ -61,13 +57,25 @@
 <body>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="menu.css">
     <!-- HEADER -->
 
     <div class="header">
-        <div><button type="button" id="menu">
-                <div id="menutxt"><b>Menu</b></div>
-            </button></div>
+        <button type="button" id="menu" onclick="toggleMenu()"><b>Menu</b> </button>
+
+        <!-- Side Menu -->
+        <div id="sideMenu" class="side-menu">
+            <a href="'Travel Destination Guide'.html" onclick="toggleMenu()">Home</a>
+            <a href="restaurants.html" onclick="toggleMenu()">Restaurants</a>
+            <a href="hotels.html" onclick="toggleMenu()">Hotels</a>
+            <a href="trails.html" onclick="toggleMenu()">Trails</a>
+            <a href="aboutus.html" onclick="toggleMenu()">About Us</a>
+            <a href="contactus.html" onclick="toggleMenu()">Contact Us</a>
+            <a href="#map" onclick="toggleMenu()">Locate Us</a>
+        </div>
+
         <img id="logo" src="logo.png">
+
         <div>
 
             <button type="button" id="login" onclick="openLogin()">
@@ -75,6 +83,7 @@
             </button>
 
         </div>
+    </div>
     </div>
 
     <!-- HEADING-->
@@ -94,6 +103,10 @@
             </button>
         </div>
     </div>
+    <!--SUGGESTIONS -->
+    <ul id="suggestions"></ul>
+    </div>
+
 
     <!-- POSTER -->
 
@@ -103,27 +116,63 @@
     </div>
 
     <!-- SLIDERS -->
+    <h1>
+        Whatever you're into, we've got it
+    </h1>
+    <div class="pic">
 
-    <!-- <div class="mid"></div> -->
+        <div class="card">
+            <a href="restaurants.html">
+                <img src="https://i.pinimg.com/1200x/b4/0f/43/b40f437944134d18871836f3843cb653.jpg">
+                <div class="overlay"></div>
+                <h3>Fine Dining</h3>
+            </a>
 
-    <!-- FOOTER -->
-
-    <div class="about_us">
-        <div id="about_us">
-            <b>
-                About Us
-            </b>
         </div>
-        <div id="about_us_txt">
-            From guiding travelers through the best places to locating exceptional fine dining restaurants,
-            TravelDestinationGuide ensures comfort and satisfaction throughout every journey. <br><br>
-            Tripadvisor LLC makes no guarantees for availability of prices advertised on our sites and applications.
-            Listed prices may require a stay of a particular length or have blackout dates, qualifications or other
-            applicable restrictions. <br><br>
-            © 2025 TravelDestinationGuide LLC All rights reserved.
+
+        <div class="card">
+            <a href="hotels.html">
+                <img src="https://i.pinimg.com/1200x/47/f7/77/47f7772ed6ceff3f3692573e4ed96ed8.jpg">
+                <div class="overlay"></div>
+                <h3>Hotels</h3>
+            </a>
+
         </div>
+
+        <div class="card">
+            <a href="trails.html">
+                <img src="trail.png">
+                <div class="overlay"></div>
+                <h3>Outdoors</h3>
+            </a>
+
+        </div>
+
     </div>
 
+
+
+
+
+
+
+    <!-- MAPS -->
+
+    <br>
+    <hr style="border: 1px solid #723948;">
+    <div id="map">
+        <iframe src="https://www.google.com/maps?q=Air+University+Islamabad&output=embed"
+            style="border:0; width: 100%; height: 450px;" loading="lazy">
+        </iframe>
+    </div>
+    <hr style="border: 1px solid #723948;">
+    <br>
+    <p style="text-align: center;">
+        © 2025 TravelDestinationGuide LLC All rights reserved.
+    </p>
+    <script src="search.js"></script>
+
+    <script src="menu.js"></script>
     <script src="script.js"></script>
 </body>
 
