@@ -9,9 +9,10 @@ const suggestionsData = [
     { name: "Serena Hotels", url: "hotels.html" },
     { name: "PC Hotels", url: "hotels.html" },
     { name: "The 108 Hotels", url: "hotels.html" },
-    { name: "Trail 5", url: "trails.html" },
-    { name: "Trail 6", url: "trails.html" },
-    { name: "Trail 7", url: "trails.html" }
+    { name: "Pine City Resorts & Waterfalls", url: "trails.html" },
+    { name: "Pakistan Monument Museum", url: "trails.html" },
+    { name: "Panjpeer Rocks", url: "trails.html" },
+    { name: "Lotus Lake", url: "trails.html" },
 ];
 
 searchInput.addEventListener('input', () => {
