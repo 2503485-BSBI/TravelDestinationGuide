@@ -1,0 +1,82 @@
+.section {
+    display: flex;
+    align-items: flex-start;
+    gap: 200px;
+}
+
+#ad {
+    width: 350px;
+    height: 900px;
+    position: sticky;
+    top: 70px;
+    left: 50px;
+}
+
+.card {
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    width: 700px;
+    height: 250px;
+    background: linear-gradient(129deg, #fbf8f9, #feeff2);
+    align-items: center;
+
+}
+
+.cards-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card-img {
+    max-width: 220px;
+    max-height: 180px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+
+.card-content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 650px;
+}
+
+.card-content h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #E2748C;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.card-content p {
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+#aboutustxt {
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    left: 450px;
+    width: 600px;
+    color: #723948;
+}
+
+.card-btn {
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    font-weight: bolder;
+    font-size: 14px;
+    border: 1px solid #000;
+}
+
+.card-btn:hover {
+    background-color: #E2748C;
+}
