@@ -3,77 +3,78 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Food Offers | Restauraunts | Travel Destination Guide</title>
-    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoors | Travel Destination Guide</title>
 </head>
-<!-- LOGIN OVERLAY -->
-<div id="acc_created" style="display:none; position:fixed; inset:0; z-index:1000;">
-    <div style="
+
+<body>
+    <link rel="stylesheet" href="trails.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="login.css">
+
+    <!-- LOGIN OVERLAY -->
+    <div id="acc_created" style="display:none; position:fixed; inset:0; z-index:1000;">
+        <div style="
         position:absolute;
         inset:0;
         background:rgba(0,0,0,0.5);
     " onclick="closeLogin()"></div>
 
-    <div style="
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -50%);
-    ">
-        <!-- LOGIN CONTENT -->
-        <div class="base">
-            <div id="logintxt"><b>SIGN UP</b></div>
+        <div class="login-panel">
 
-            <div id="user">
-                <form>
-                    <label><i><b>Your Name</b></i></label><br>
-                    <input type="text" placeholder="Full Name" class="user_input"><br><br>
+            <!-- LOGIN CONTENT -->
+            <div class="base">
+                <div id="logintxt"><b>SIGN UP</b></div>
 
-                    <label><i><b>Your Contact</b></i></label><br>
-                    <input type="number" placeholder="+1" class="user_input"><br><br>
+                <div id="user">
+                    <form>
+                        <label><i><b>Your Name</b></i></label><br>
+                        <input type="text" placeholder="Full Name" class="user_input"><br><br>
 
-                    <label><i><b>Your Email</b></i></label><br>
-                    <input type="email" placeholder="Enter Email" class="email_pws"><br><br>
+                        <label><i><b>Your Contact</b></i></label><br>
+                        <input type="number" placeholder="+1" class="user_input"><br><br>
 
-                    <label><i><b>Your Password</b></i></label><br>
-                    <input type="password" placeholder="Enter Password" class="email_pws"><br><br>
-                </form>
+                        <label><i><b>Your Email</b></i></label><br>
+                        <input type="email" placeholder="Enter Email" class="email_pws"><br><br>
 
-                <a href="#" class="forgot_pws" style="position:absolute; top:73%; left: 58%;">Forgot Password?</a>
+                        <label><i><b>Your Password</b></i></label><br>
+                        <input type="password" placeholder="Enter Password" class="email_pws"><br><br>
+                    </form>
 
-                <div class="sign_in"><b>Already have an account?</b></div>
-                <a href="#" class="forgot_pws" style="font-size:25px; margin-top: 10px;"><b>Sign In</b></a>
+                    <a href="#" class="forgot_pws" style="position:absolute; top:73%; left: 58%;">Forgot Password?</a>
 
-                <button type="button" id="button">
-                    <b>Create Account</b>
-                </button>
-            </div>
-            <div id="image">
-                <img src="spider lilies.png" id="image">
+                    <div class="sign_in"><b>Already have an account?</b></div>
+                    <a href="#" class="forgot_pws" style="font-size:25px; margin-top: 10px;"><b>Sign In</b></a>
+
+                    <button type="button" id="button" onclick="notification()">
+                        <b>Create Account</b>
+                    </button>
+                </div>
+                <div id="image">
+                    <img src="spider lilies.png" id="image">
+                </div>
             </div>
         </div>
+
     </div>
-
-</div>
-
-<body>
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="style.css">
     <!-- HEADER -->
 
     <div class="header">
         <button type="button" id="menu" onclick="toggleMenu()"><b>Menu</b> </button>
+
         <!-- Side Menu -->
+
         <div id="sideMenu" class="side-menu">
-            <a href="index.html" onclick="toggleMenu()">Home</a>
+            <a href="'Travel Destination Guide'.html" onclick="toggleMenu()">Home</a>
             <a href="restaurants.html" onclick="toggleMenu()">Restaurants</a>
             <a href="hotels.html" onclick="toggleMenu()">Hotels</a>
             <a href="trails.html" onclick="toggleMenu()">Trails</a>
             <a href="aboutus.html" onclick="toggleMenu()">About Us</a>
             <a href="contactus.html" onclick="toggleMenu()">Contact Us</a>
-            <a href="#map" onclick="toggleMenu()">Locate Us</a>
+            <a href="'Travel Destination Guide'.html" onclick="toggleMenu()">Locate Us</a>
         </div>
+
         <img id="logo" src="logo.png">
 
         <div>
@@ -84,52 +85,99 @@
 
         </div>
     </div>
-    <!-- CONTAINERS -->
-    <div class="container">
 
-        <a href="https://www.google.com/maps/place/Trail+5,+Islamabad/@33.7524883,73.0855937,17z/data=!3m1!4b1!4m6!3m5!1s0x38dfbf5eef818793:0x5d7d2adff678c1e7!8m2!3d33.7524883!4d73.0855937!16s%2Fg%2F1tnpjcsw?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
-            target="_blank" class="card-link">
-            <div class="card">
-                <h2 style="color: #723948;">Trail 5 Margalla Hills</h2>
-                <p>"Explore the wild, breathe the freedom."</p>
-                <img src="trail5.jpg" alt="trail 5">
-            </div>
-        </a>
 
-        <a href="https://www.google.com/maps/place/Trail+6,+Islamabad/data=!4m2!3m1!1s0x38dfbedd71ef5257:0x9fdbcc1df8c7832b?sa=X&ved=1t:242&ictx=111"
-            target="_blank" class="card-link">
-            <div class="card">
-                <h2 style="color: #723948;">Trail 6 Margalla Hills</h2>
-                <p>"Step up, Margalla awaits."</p>
-                <img src="trail6.jpg" alt="trail 6">
-            </div>
-        </a>
+    <div class="section">
 
-        <a href="https://www.google.com/maps/place/Trail+7+Starting+Point/@33.713704,72.9490474,17z/data=!3m1!4b1!4m6!3m5!1s0x38dfbdb9c108958b:0x45d03f4e238b9206!8m2!3d33.713704!4d72.9490474!16s%2Fg%2F11s752x_qh?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
-            target="_blank" class="card-link">
+        <img src="ad.png" id="ad">
+
+
+        <div class="cards-column">
+
+            <!-- PINE CITY -->
             <div class="card">
-                <h2 style="color: #723948;">Trail 7 Margalla Hills</h2>
-                <p>"Adventure lives on Trail 7."</p>
-                <img src="trail7.jpg" alt="trail 7">
+                <img src="pinecity.png" class="card-img">
+                <div class="card-content">
+                    <h1>Pine City Resorts & Waterfalls</h1>
+                    <p>
+                        Pine City is one of the most beautiful places on the outskirts of Islamabad city,
+                        famous for its amazing sceneries, sky-high mountains, and cozy weather.
+                        Pine City offers 1 and 2 kanal plots, and 15 & 20 kanal farmhouses, an excellent
+                        opportunity for every investor.
+                    </p>
+                    <button class="card-btn">RESERVE</button>
+                </div>
             </div>
-        </a>
+
+            <!-- Pakistan Monument Museum -->
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Blue_Hour_at_Pakistan_Monument.jpg/1200px-Blue_Hour_at_Pakistan_Monument.jpg"
+                    class="card-img">
+                <div class="card-content">
+                    <h1>Pakistan Monument Museum</h1>
+                    <p>
+                        Pakistan Monument Museum is located in Shakarparian hills in Zero Point Interchange, Islamabad.
+                        A wonderful museum that provides insight into Pakistan's history and leadership.
+                    </p>
+                    <button class="card-btn">RESERVE</button>
+                </div>
+            </div>
+
+            <!-- Panjpeer Rocks -->
+            <div class="card">
+                <img src="https://www.exploria.pk/wp-content/uploads/2024/07/tour-5.jpg" class="card-img">
+                <div class="card-content">
+                    <h1>Panjpeer Rocks</h1>
+                    <p>
+                        Nestled at an elevation of 5500 feet in the serene landscapes of Union Council Narar,
+                        Panjpeer Rocks is a must-visit destination for nature lovers and adventure seekers.
+                    </p>
+                    <button class="card-btn">RESERVE</button>
+                </div>
+            </div>
+
+            <!-- PINE CITY -->
+            <div class="card">
+                <img src="https://www.vizit.pk/uploads/blogs/1024x684-1.png" class="card-img">
+                <div class="card-content">
+                    <h1>Lotus Lake</h1>
+                    <p>
+                        Inaugurated in late 2020 as part of a “natural family park” project, the site features a
+                        100-foot-long lotus pond, surrounded by wooden seating areas and a place designated for
+                        barbecue.
+                        The surroundings has been covered with lattices for security purpose, also aiming to preserve
+                        the natural beauty of the area.
+                    </p>
+                    <button class="card-btn">RESERVE</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br><br>
+    <hr>
+    <!-- FOOTER -->
+    <h1>
+        <b>
+            About Us
+        </b>
+    </h1>
+    <div id="aboutustxt">
+        From guiding travelers through the best places to locating exceptional fine dining restaurants,
+        TravelDestinationGuide ensures comfort and satisfaction throughout every journey. <br><br>
+        TravelDestinationGuide LLC makes no guarantees for availability of prices advertised on our sites and
+        applications.
+        Listed prices may require a stay of a particular length or have blackout dates, qualifications or other
+        applicable restrictions. <br><br><br>
+        © 2025 TravelDestinationGuide LLC All rights reserved.
+
 
     </div>
 
-    <!-- MAPS -->
+    <hr style="margin-top: 250px;">
 
-    <br>
-    <hr style="border: 1px solid #723948;">
-    <div id="map">
-        <iframe src="https://www.google.com/maps?q=Air+University+Islamabad&output=embed"
-            style="border:0; width: 100%; height: 450px;" loading="lazy">
-        </iframe>
-    </div>
-    <hr style="border: 1px solid #723948;">
-    <br>
     <script src="menu.js"></script>
     <script src="script.js"></script>
 </body>
-
 
 </html>
